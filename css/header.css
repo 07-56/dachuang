@@ -1,0 +1,36 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #333;
+	cursor: pointer;
+}
+.header{
+	width: 100%;
+	background-color: #eee;
+	height: 30px;
+}
+.header .hd-wrapper{
+	margin: 0 auto;
+	width: 1000px;
+}
+.header .hd-wrapper .hd-a{
+	float:right;
+	height: 26px;
+	font-size: 12px;
+	font-weight: bolder;
+	color:#fff;
+	line-height: 26px;
+	padding:0 10px 0 10px;
+	margin: 2px 5px 0 5px;
+	background-color: orange;
+	border-radius: 13px;
+}
+.header .hd-wrapper a:hover{
+	background-color:#f40;
+}

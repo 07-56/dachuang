@@ -1,0 +1,193 @@
+li{
+  display: inline-block;
+}
+#content, .cont-header{
+  width: 990px;
+  margin: 0 auto;
+}
+.cont-header{
+  padding: 20px 0 40px;
+  position: relative;
+  height: 35px;
+}
+#logo{
+  float: left;
+}
+.orderBody{
+  margin-bottom: 15px;
+  border: 1px solid #eee;
+}
+.orderHeader{
+  position: relative;
+  height: 38px;
+  background: #fff;
+  overflow: hidden;
+}
+.orderShop{
+  position: relative;
+  z-index: 2;
+  line-height: 38px;
+  padding-left: 15px;
+}
+.orderContent{
+  border: 1px solid #ccc;
+}
+.itemHolder{
+  position: relative;
+}
+.item{
+  background: #fcfcfc;
+}
+.itemContent td{
+  float: left;
+  height: 119px;
+}
+.itemContent .td-chk {
+  position: relative;
+}
+.td-item {
+  width: 302px;
+}
+.td-info {
+width: 172px;
+padding-right: 20px;
+}
+.th-price, .td-price {
+width: 120px;
+}
+.th-amount, .td-amount {
+width: 120px;
+}
+.itemContent .td-sum {
+color: #f40;
+font-weight: 700;
+}
+.td-op {
+width: 84px;
+padding: 0 0 0 15px;
+}
+.td-inner {
+padding-top: 20px;
+}
+.cart-checkbox, .td-chk .s-checkbox {
+margin: 0 10px 0 0;
+float: right;
+}
+.cart-checkbox {
+position: relative;
+display: inline-block;
+width: 15px;
+height: 15px;
+}
+.cart-checkbox input {
+position: absolute;
+left: 5px;
+top: 5px;
+}
+.itemContent .item-pic {
+width: 80px;
+height: 80px;
+border: 1px solid #eee;
+float: left;
+overflow: hidden;
+background: #fff;
+}
+.itemContent .item-pic a {
+display: table-cell;
+width: 80px;
+height: 80px;
+vertical-align: middle;
+text-align: center;
+}
+.itemContent .item-pic img {
+height: 80px;
+width: 80px;
+vertical-align: middle;
+}
+.td-item .item-basic-info {
+min-height: 40px;
+}
+.itemContent .item-props {
+height: 84px;
+}
+.itemContent li {
+}
+.itemContent .td {
+float: left;
+min-height: 119px;
+}
+.td-sum {
+width: 105px;
+}
+.td-amount {
+width: 120px;
+}
+.td-inner {
+position:relative;
+padding-top: 20px;
+}
+.itemContent .item-amount {
+height: 25px;
+overflow: hidden;
+position: relative;
+z-index: 1;
+}
+.itemContent .item-amount {
+width: 77px;
+}
+.itemContent .td-sum {
+color: #f40;
+font-weight: 700;
+}
+.itemContent .td-sum .td-inner {
+padding-top: 16px;
+}
+.amount-has-error .text-amount {
+border-color: #efbba9;
+color: #6c6c6c;
+}
+.itemContent .text-amount {
+float: left;
+}
+.itemContent .text-amount {
+width: 39px;
+height: 15px;
+line-height: 15px;
+border: 1px solid #aaa;
+text-align: center;
+padding: 4px 0;
+background-color: #fff;
+background-position: -75px -375px;
+position: absolute;
+z-index: 2;
+left: 18px;
+top: 0;
+}
+.clearfix:after{
+content: '\0020';
+display: block;
+height: 0;
+clear: both;
+}
+.main-wrap .footer{
+position: fixed;
+bottom:0;
+width:990px;
+background: #e5e5e5;
+height: 50px;
+}
+.main-wrap .footer div{
+float: right;
+display: inline-block;
+line-height: 50px;
+margin-right: 20px;
+}
+.orderInfo div{
+width:100px;
+}
+.submitBtn{
+padding: 0 15px;
+cursor: pointer;
+background: #f40;
+color: #fff;
+}

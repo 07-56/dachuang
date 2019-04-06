@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>购物车</title>
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/buyCar.css">
+  <script src="../js/vue.js"></script>
+  <script src="../js/mainData.js"></script>
+</head>
+<body>
+    <div class="header">
+      <div class="hd-wrapper">
+        <div class="hd-cont">
+          <a class="hd-a" href="">联系客服</a>
+          <a class="hd-a" href="../html/gouwuche.html">购物车</a>
+          <a class="hd-a center" href="userDetail.html" id="log-in">用户</a>
+          <a class="hd-a last center" id="signUp">注册</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="content">
+      <div class="cont-header">
+        <h1 id="logo" style="position: relative;">
+          <img src="../css/logo.jpg" style="width: 190px; height: 55px;">
+          <span style="position:absolute; top:0;left: 400px;width: 300px;color: #f40;">Happying&nbsp;购物车</span>
+        </h1>
+      </div>
+      <div class="cont-main">
+        <div class="main-wrap">
+          <div class="main-list">
+            <div class="orderHolder">
+              <div class="orderBody">
+                <div class="orderHeader clearfix">
+                  <div class="orderShop">来源：
+                    <span>来源网站</span>
+                    <span style="margin-left: 15px;color: #f40;">订单号</span>
+                  </div>
+                </div>
+                <div class="orderContent clearfix" v-for="(item, index) in carList">
+                  <div class="orderContWrap">
+                    <div class="itemHolder">
+                      <div class="item clearfix">
+                        <ul class="itemContent clearfix">
+                          <li class="td-chk td">
+                            <div class="td-inner">
+                              <div class="cart-checkbox">
+                                <input type="checkbox" v-model="item.checked" v-bind:value = "localStorage.count">
+                              </div>
+                            </div>
+                          </li>
+                          <li class="td-item td">
+                            <div class="td-inner">
+                              <div class="item-pic">
+                                <a href="">
+                                  <img v-bind:src="goodsList[localStorage.goodsIndex].imgs" alt="">
+                                </a>
+                              </div>
+                              <div class="item-info">
+                                <div class="item-basic-info">
+                                  <span>{{goodsList[localStorage.goodsIndex].title}}</span>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="td td-info"> 
+                            <div class="item-props "></div> 
+                          </li>
+                          <li class="td td-price"> 
+                            <div class="td-inner">
+                              <div class="item-price price-promo-">
+                                <div class="price-content">
+                                  <div class="price-line">
+                                    <em class="J_Price price-now">${{goodsList[localStorage.goodsIndex].singlePrice}}</em>
+                                  </div>
+                                </div>
+                              </div>
+                            </div> 
+                          </li>
+                          <li class="td td-amount"> 
+                            <div class="td-inner">
+                              <div class="amount-wrapper amount-has-error">
+                                <div class="item-amount ">
+                                  <span class="text-amount">{{localStorage.goodsCount}}</span>
+                                </div>
+                              </div>
+                            </div> 
+                          </li>
+                          <li class="td td-sum"> 
+                            <div class="td-inner">
+                              <em class="J_ItemSum number">${{localStorage.sumPrice}}</em>
+                              <div class="J_ItemLottery"></div>
+                            </div> 
+                          </li>
+                          <li class="td td-op"> 
+                            <div class="td-inner">
+                              <span class="td-del">删除</span>
+                            </div> 
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer clearfix">
+            <div class="submitBtn" @click="startCollect(goodsList[localStorage.goodsIndex])">结算</div>
+            <div class="orderInfor">
+              <div class="ordSel">已选择{{count}}件</div>
+              <div class="contSum">总价：</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  <script src="../js/car.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+.mainWrap{
+  position: relative;
+  width: 900px;
+  margin: 0 auto;
+  border: 1px solid #eee;
+}
+.mainWrap .quitBtn{
+  position:absolute;
+  right: 0;
+  bottom:0;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  background: #f40;
+  cursor: pointer;
+}
+.mainWrap .userArea{
+  width: 700px;
+  height: 60px;
+  border: 1px solid #eee;
+  margin: 20px auto;
+  padding: 10px 50px;
+  background: #f4f8fb;
+}
+.mainWrap .userArea .userName, .userAddress{
+  height: 30px;
+  line-height: 30px;
+}
+.mainWrap .orderArea{
+  width: 700px;
+  margin: 0 auto;
+  padding: 10px 50px;
+}
+.mainWrap .orderArea .myOrder{
+  height: 40px;
+  line-height: 40px;
+  background:#f4f8fb;
+  border: 1px solid #eee;
+}
+.mainWrap .orderArea .myOrder span{
+  margin-left: 20px;
+}
+.orderList{
+  border: 1px solid #eee;
+}
+.orderList .item{
+  height: 90px;
+}
+.orderList .item-content{
+  display: inline-block;
+  float: left;
+}
+.orderList .itemImg{
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 100px;
+}
+.orderList .itemImg img{
+  width: 80px;
+  height: 80px;
+}
+.orderList .itemInfo{
+  height: 90px;
+  line-height: 90px;
+}
+.orderList .itemBtn{
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  float: right;
+}
+.orderList .itemBtn span{
+  margin: 0 auto;
+  padding: 0 5px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.clearfix:after,.item-content:after{
+  content: '\0020';
+  display: block;
+  height: 0;
+  clear: both;
+}

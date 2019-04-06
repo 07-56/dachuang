@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" media="only screen and (min-device-width:768px) and (max-device-width: 1920px)"   href="index.css">
+	<title>海拼Happying</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/header.css">
+	<script src="js/vue.js"></script>
+	<script src="js/mainData.js"></script>
 </head>
 <body>
 
@@ -11,15 +14,15 @@
 		<div class="hd-wrapper">
 			<div class="hd-cont">
 				<a class="hd-a" href="">联系客服</a>
-				<a class="hd-a" href="">购物车</a>
-				<a class="hd-a center" id="log-in" href="javascript:void(0)">登陆</a>
-				<a class="hd-a last center" href="">注册</a>
+				<a class="hd-a" href="html/gouwuche.html" target="_blank">购物车</a>
+				<a class="hd-a center" id="log-in" @click="openBox()">登陆</a>
+				<a class="hd-a last center" id="signUp">注册</a>
 			</div>
 		</div>
 	</div>
 
 	<div class="M-title">
-		<div class="main">海拼happying</div>
+		<div class="main">海拼Happying</div>
 		<div class="primary">海淘拼单平台</div>
 	</div>
 
@@ -65,12 +68,6 @@
 			</ul>
 		</div>
 
-		<div class="content" id="popping">
-			<div id="inner">
-				sss
-			</div>
-		</div>
-
 		<div class="cont-hd">
 			<a class="cont1-tit" href="">品牌A-Z</a>
 			<a class="cont1-tit" href="">英国</a>
@@ -113,18 +110,18 @@
 
 		<div class="right-in">
 			<p>热搜榜</p>
-			<ul class="right-cont">
-				<li class="cont-right"><span class="red">1></span><a href="">Samsung Galaxy S8</a></li>
-				<li class="cont-right"><span class="red">2></span><a href="">iPad Pro 10.8英寸</a></li>
-				<li class="cont-right"><span class="red">3></span><a href="">净水器</a></li>
-				<li class="cont-right"><span class="red">4></span><a href="">奶粉</a></li>
-				<li class="cont-right"><span class="red">5></span><a href="">防晒霜</a></li>
-				<li class="cont-right"><span class="red">6></span><a href="">驱蚊水</a></li>
-				<li class="cont-right"><span class="red">7></span><a href="">PUMA</a></li>
-				<li class="cont-right"><span class="red">8></span><a href="">咖啡</a></li>
-				<li class="cont-right"><span class="red">9></span><a href="">MUJI</a></li>
-				<li class="cont-right"><span class="red">10></span><a href="">YSL</a></li>
-			</ul>
+			<ol class="right-cont">
+				<li class="cont-right"><span class="red"></span><a href="">Samsung Galaxy S8</a></li>
+				<li class="cont-right"><span class="red"></span><a href="">iPad Pro 10.8英寸</a></li>
+				<li class="cont-right"><span class="red"></span><a href="">净水器</a></li>
+				<li class="cont-right"><span class="red"></span><a href="">奶粉</a></li>
+				<li class="cont-right"><span class="red"></span><a href="">防晒霜</a></li>
+				<li class="cont-right"><span class="red"></span><a href="">驱蚊水</a></li>
+				<li class="cont-right"><span class="red"></span><a href="">PUMA</a></li>
+				<li class="cont-right"><span class="red"></span><a href="">咖啡</a></li>
+				<li class="cont-right"><span class="red"></span><a href="">MUJI</a></li>
+				<li class="cont-right"><span class="red"></span><a href="">YSL</a></li>
+			</ol>
 		</div>
 
 	</div>
@@ -133,20 +130,20 @@
 		<div class="cont-tit">新品推荐</div>
 		<div class="sh-wrap">
 			<div class="new-sh">
-				<a href=""><img src="" alt="">
-				<div class="new-tit">123123</div></a>
+				<a id="goodsOne" href="html/goodsDetail.html" target="_blank"><img src="imgs/source/1.JPG" alt="">
+				<div class="new-tit">2018新款iPad</div></a>
 			</div>
 			<div class="new-sh">
-				<a href=""><img src="" alt="">
-				<div class="new-tit">123123</div></a>
+				<a id="goodsTwo" href="html/goodsDetail.html" target="_blank"><img src="imgs/source/2.JPG" alt="">
+				<div class="new-tit">Samsung Galaxy手机</div></a>
 			</div>
 			<div class="new-sh">
-				<a href=""><img src="" alt="">
-				<div class="new-tit">123123</div></a>
+				<a id="goodsThr" href="html/goodsDetail.html" target="_blank"><img src="imgs/source/3.JPG" alt="">
+				<div class="new-tit">营养早餐1.4kg</div></a>
 			</div>
 			<div class="new-sh">
-				<a href=""><img src="" alt="">
-				<div class="new-tit">123123</div></a>
+				<a id="goodsFou" href="html/goodsDetail.html" target="_blank"><img src="imgs/source/4.JPG" alt="">
+				<div class="new-tit">霸王洗发液</div></a>
 			</div>
 		</div>
 	</div>
@@ -155,20 +152,20 @@
 		<div class="cont-tit">大家再买</div>
 		<div class="sh-wrap">
 			<div class="new-sh">
-				<a href=""><img src="" alt="">
-				<div class="new-tit">123123</div></a>
+				<a href="javascript:void(0)"><img src="imgs/source/1.JPG" alt="">
+				<div class="new-tit">商品</div></a>
 			</div>
 			<div class="new-sh">
-				<a href=""><img src="" alt="">
-				<div class="new-tit">123123</div></a>
+				<a href="javascript:void(0)"><img src="imgs/source/2.JPG" alt="">
+				<div class="new-tit">商品</div></a>
 			</div>
 			<div class="new-sh">
-				<a href=""><img src="" alt="">
-				<div class="new-tit">123123</div></a>
+				<a href="javascript:void(0)"><img src="imgs/source/3.JPG" alt="">
+				<div class="new-tit">商品</div></a>
 			</div>
 			<div class="new-sh">
-				<a href=""><img src="" alt="">
-				<div class="new-tit">123123</div></a>
+				<a href="javascript:void(0)"><img src="imgs/source/4.JPG" alt="">
+				<div class="new-tit">商品</div></a>
 			</div>
 		</div>
 	</div>
@@ -177,20 +174,20 @@
 		<div class="cont-tit">优惠信息</div>
 		<div class="sh-wrap">
 			<div class="new-sh">
-				<a href=""><img src="" alt="">
-				<div class="new-tit">123123</div></a>
+				<a href="javascript:void(0)"><img src="imgs/source/1.JPG" alt="">
+				<div class="new-tit">商品</div></a>
 			</div>
 			<div class="new-sh">
-				<a href=""><img src="" alt="">
-				<div class="new-tit">123123</div></a>
+				<a href="javascript:void(0)"><img src="imgs/source/2.JPG" alt="">
+				<div class="new-tit">商品</div></a>
 			</div>
 			<div class="new-sh">
-				<a href=""><img src="" alt="">
-				<div class="new-tit">123123</div></a>
+				<a href="javascript:void(0)"><img src="imgs/source/3.JPG" alt="">
+				<div class="new-tit">商品</div></a>
 			</div>
 			<div class="new-sh">
-				<a href=""><img src="" alt="">
-				<div class="new-tit">123123</div></a>
+				<a href="javascript:void(0)"><img src="imgs/source/4.JPG" alt="">
+				<div class="new-tit">商品</div></a>
 			</div>
 		</div>
 	</div>
@@ -303,20 +300,61 @@
 	<script src="js/jquery-3.2.1.js"></script>
 	<script src="js/search.js"></script>
 	<script src="js/loginBox.js"></script>
-
 	<script>
-		$(".cont").mouseenter(function () {
-			$("#popping").css("display", "block").mouseenter(function () {
-				$("#popping").css("display", "block");
-			}).mouseleave(function (){
-				$("#popping").css("display", "none");
-			});;
-		}).mouseleave(function (){
-			$("#popping").css("display", "none");
-		});//内容部分左侧列表弹出
+		var myLocal = {
+			get(key){
+				return JSON.parse(window.localStorage.getItem(key));
+			},
+			save(key,value){
+				window.localStorage.setItem(key,JSON.stringify(value));
+			}
+		}
+
+		var login = document.getElementById("log-in"),
+				goodsOne = document.getElementById("goodsOne"),
+				goodsThr = document.getElementById("goodsThr"),
+				goodsFou = document.getElementById("goodsFou"),
+				goodsTwo = document.getElementById("goodsTwo");
+
+		goodsOne.onclick = function () {	
+			myLocal.save("goodsIndex", 0);
+		}
+		goodsTwo.onclick = function () {
+			myLocal.save("goodsIndex", 1);
+		}
+		goodsThr.onclick = function () {
+			myLocal.save("goodsIndex", 2);
+		}
+		goodsFou.onclick = function () {
+			myLocal.save("goodsIndex", 3);
+		}
+
+		var localStorage = window.localStorage;
+
+		if(localStorage.user == "1"){
+			login.innerText = "管理员";
+		}else{
+			if(localStorage.user == "0"){
+				login.innerText = "用户";
+			}else{
+				login.innerText = "登陆";
+			}
+		}
+		
+		$("#signUp").bind("click",function () {
+			window.location.href = "html/zhuce.html";
+		})
 
 		$("#log-in").bind("click", function () {
-			$(".loginBox").css("display","block");
+			if(login.innerText == '登陆'){
+				$(".loginBox").css("display","block");
+			}else{
+				if(login.innerText == '管理员'){
+					window.location.href = "html/pindan.html"
+				}else{
+					window.location.href = "html/userDetail.html"
+				}
+			}
 		});//登陆框
 
 		$("#log-close").bind("click", function () {
@@ -339,6 +377,8 @@
 				$("#colA").css("background", "rgb(0, 235, 245)").text("开拼");
 			}
 		});//搜索框样式更改
+
+		
 
 	</script>
 	<script>

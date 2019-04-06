@@ -1,0 +1,443 @@
+.M-title{
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+}
+.M-title .main{
+	font-size: 30px;
+	color: #f40;
+	font-weight: bolder;
+}
+.M-title .primary{
+	color: orange;
+	font-size: 20px;
+}
+.searchbox{
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+}
+.searchbox .logo{
+	width: 207px;
+	height: 54px;
+	display: inline-block;
+	background-image: url(logo.jpg);
+	background-size: 207px 54px;
+}
+.searchbox .search-area{
+	position: absolute;
+	left: 257px;
+	top:0;
+}
+.search-wrap{
+	height: 28px;
+	border:2px solid #f40;
+	border-radius: 30px; 
+}
+.search-wrapA{
+	height: 28px;
+	border:2px solid rgb(0, 225, 245);
+	border-radius: 30px; 
+}
+#searcher{
+	border: none;
+	width: 350px;
+	height: 26px;
+	padding-left: 10px;
+	background:transparent;
+	outline: none;
+	margin-left: 5px;
+}
+.searchbox .search-area .choose{
+	margin: 0 3px 0 3px;
+	padding: 3px 5px;
+}
+.searchbox .search-area .choose, .bot-in{
+	font-size:13px;
+}
+.searchbox .search-area .choose:hover{
+	background-color: #f40;
+	color:#fff;
+	padding: 0 5px;
+	border-radius: 7px;
+}
+.searchbox .choose-wrap, .bot-area{
+	margin-left: 20px;
+}
+.searchbox .search-area .chosen{
+	background-color: #f40;
+	color:#fff;
+	padding: 0px 5px;
+	border-radius: 7px;
+}
+.searchbox .search-wrap a{
+	font-size:14px;
+	color: #fff;
+	width:50px;
+	height:28px;
+	line-height: 28px;
+	display: inline-block;
+	padding: 2px 30px 0 30px;
+	margin-top: -2px;
+	background: #f40;
+	border-top-right-radius: 13px;
+	border-bottom-right-radius: 13px;
+}
+.code{
+	position: absolute;
+	right: 0px;
+	top: -20px;
+}
+.code .title{
+	text-align: center;
+	font-size: 13px;
+}
+.code .cocode{
+	background-color:#333;
+	width: 100px;
+	height: 100px;
+}
+
+.cont-One{
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+	top: 20px;
+	margin-bottom: 20px;
+}
+.cont-One .left-index{
+	margin-left: 30px;
+	color:#fff;
+	width:150px;
+	height:280px;
+	background-color: rgb(0, 225, 245);
+	border-radius:15px;
+}
+.cont-One .left-index .main{
+	text-align: center;
+	padding: 10px 0 10px 0;
+}
+.cont-One .left-index .cont{
+	text-align: center;
+	padding: 3px 0;
+}
+.cont-One .left-index .cont:hover{
+	background: rgba(0,205,255, 0.7);
+}
+.cont-One .content{
+	position: absolute;
+	top: 0;
+	left: 180px;
+	width: 550px;
+	height: 280px;
+	display: none;
+	border-radius: 5px;
+	z-index:998;
+	background: rgb(0, 225, 245);
+}
+.cont-One .content #inner{
+	text-align: center;
+	width: 500px;
+	height: 250px;
+	background: #fff;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+.cont-hd{
+	float: left;
+	position: absolute;
+	top: 0;
+	left: 250px;
+}
+.cont-hd a{
+	color: rgb(0, 225, 245);
+	margin: 0 10px;
+}
+.slider{
+	position: absolute;
+	top: 30px;
+	left: 230px;
+	width:500px;
+	height: 250px;
+	background: #333;
+	overflow: hidden;
+}
+#slide{
+	position: relative;
+	width: 2500px;
+	height: 250px;
+	display: inline-block;
+}
+#slide li{
+	float: left;
+}
+.slider .i-wrap{
+	position: relative;
+	width: 500px;
+	height: 30px;
+	bottom: 30px;
+}
+.slider .point{
+	position: absolute;
+	height: 10px;
+	top: 5px;
+	z-index: 995;
+	left: 220px;
+}
+.slider .point i{
+	float: left;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-right: 5px;
+	background-color:#fff;
+}
+
+.cont-One .right-in{
+	position: absolute;
+	right: 0;
+	width: 200px;
+	top: 25px;
+}
+.cont-One .right-in p{
+	font-size: 16px;
+	font-weight: bolder;
+	margin: 0 0 10px 0;
+	color: #f40;
+}
+.cont-One .right-in .red{
+	color:orange;
+}
+.cont-One .right-in a{
+	font-size: 14px;
+	font-weight: bolder;
+}
+.cont-New, .cont-hot, .cont-cheap{
+	position: relative;
+	width: 1000px;
+	margin: 30px auto;
+}
+.cont-tit{
+	width: 100px;
+	font-size: 14px;
+	color: orange;
+	margin: 10px auto;
+}
+.sh-wrap{
+	position: relative;
+	left: 100px;
+	width:800px;
+}
+.new-sh{
+	position: relative;
+	border: 1px solid black;
+	width: 180px;
+	height: 220px;
+	display:inline-block;
+}
+.new-tit{
+	position:absolute;
+	bottom: 15px;
+	width:170px;
+	display:inline-block;
+	text-align: center;
+}
+.sh-wrap img{
+	position: absolute;
+	left:10px;
+	top:10px;
+	width:160px;
+	height:160px;
+	border: 1px solid red;
+}
+.More{
+	width: 1000px;
+	margin: 0 auto;
+}
+.More .img-wrap{
+	margin-left:50px;
+}
+.More .img-wrap .icon{
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	margin-left: 20px;
+	background-image: url(logo.jpg);
+	background-size: 100px 50px;
+	background-repeat: no-repeat;
+}
+.footer{
+	position: relative;
+	left: 0px;
+	right: 0px;
+	height: 200px;
+	background-color: #eee;
+}
+.footer .fot-wrap{
+	position: relative;
+	width: 900px;
+	height: 200px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.footer .fot-wrap ul{
+	margin-right: 200px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 20px;
+}
+.footer .fot-wrap .ri{
+position: absolute;
+	right: 0;
+	margin-right: 0;
+}
+.footer .fot-wrap .title{
+	font-weight: bolder;
+	color: rgb(0, 225, 235);
+}
+.footer .fot-wrap a{
+	font-size: 13px;
+	color:rgb(0, 225, 235);
+}
+.fot-lef .fotlef-wrap{
+	position: absolute;
+	bottom:15px;
+}
+.fot-lef .fotlef-wrap div{
+	float: left;
+	margin-left: 10px;
+}
+.fot-lef .fotlef-wrap img{
+	width: 30px;
+	height: 20px;
+	margin-bottom:-5px; 
+	border:1px solid red;
+	display: inline-block;
+}
+.fot-lef .fotlef-wrap span{
+	font-size: 13px;
+	color: #333;
+	height: 20px;
+	line-height: 20px;
+}
+.back{
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	top: 50%;
+	right: 0px;
+	text-align: center;
+	border-radius: 25px;
+	margin-top: -25px;
+	background-color: rgba(255, 44, 00, 0.7);
+}
+.loginBox{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right:0;
+	bottom:0;
+	z-index: 999;
+	display: none;
+	background-color: rgba(225, 225, 225, 0.5);
+}
+.loginBox .log-cont{
+	position: relative;
+	left: 50%;
+	margin-left: -150px;
+	top: 50%;
+	margin-top: -175px;
+	width: 300px;
+	height: 350px;
+	background: rgba(0, 205, 255, 0.9);
+}
+.loginBox .log-cont button{
+	position: absolute;
+	right: 0;
+	top:0;
+	outline: none;
+	border: none;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+	background-color: #f40;
+}
+.loginBox .log-cont .log-wrap{
+	position: relative;
+	margin: 0 auto;
+	width: 250px;
+	height: 300px;
+}
+.loginBox .log-cont .title{
+	text-align: center;
+	font-size: 20px;
+	color: rgb(255, 205, 255);
+	padding: 25px 0 25px 0;
+}
+.loginBox .log-cont .lg-cont{
+	position: absolute;
+	width: 250px;
+	margin: 0 auto;
+	top: 60px;
+	bottom: 0px;
+}
+.loginBox .log-cont .lg-cont .inner{
+	position: relative;
+	height: 40px;
+}
+.loginBox .log-cont .lg-cont .inner input{
+	position: absolute;
+	right: 20px;
+	width: 125px;
+	margin-top: 15px;
+	margin-left: 3px;
+	padding: 2px 10px 2px 10px;
+	border: 2px solid #f40;
+	border-radius: 10px;
+	outline: none;
+	font-size: 14px;
+}
+.loginBox .log-cont .lg-cont .inner span{
+	display: inline-block;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+.loginBox .log-cont .lg-cont .inner .watch{
+	position: absolute;
+	cursor: pointer;
+	right: 25px;
+	top: 20px;
+	width: 15px;
+	height: 15px;
+	background-color: #aaa;
+}
+.loginBox .log-cont .forgot{
+	position: absolute;
+	bottom:5px;
+	right: 5px;
+	font-size: 14px;
+}
+.loginBox .log-cont .apply{
+	width: 150px;
+	height: 30px;
+	margin: 25px auto;
+	border-radius: 5px;
+	background: orange;
+}
+.loginBox .log-cont .apply a{
+	width: 150px;
+	height: 30px;
+	color: #fff;
+	display: block;
+	text-align: center;
+	line-height: 30px;
+}
+.loginBox .log-cont .forgot a:hover{
+	color: #f40;
+}
+.loginBox .log-cont .remember .Me{
+	font-size: 14px;
+	display: inline-block;
+	color: #fff;
+}

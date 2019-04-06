@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../js/vue.js"></script>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    ul li{
+      list-style: none;
+    }
+    body{
+      background-image: url(../imgs/zhuce/bg.jpg);
+      background-size: 100%;
+    }
+    .main-wrap{
+      width: 700px;
+      margin: 100px auto;
+      border: 1px solid #eee;
+      background:#fff;
+    }
+    .M-title{
+      width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .M-title .main{
+      font-size: 30px;
+      color: #f40;
+      font-weight: bolder;
+    }
+    .M-title .primary{
+      color: orange;
+      font-size: 20px;
+    }
+    #signUp{
+      width: 600px;
+      margin: 20px auto;
+      border: 1px solid green;
+      padding-top: 20px; 
+    }
+    #signUp li{
+      height:40px;
+      line-height: 40px;
+      padding-left: 20px;
+    }
+    #signUp li span{
+      display: inline-block;
+      font-size: 16px;
+      color: #f40;
+      margin-left: 80px;
+      font-weight: bolder;
+      width: 100px;
+    }
+    #signUp li input{
+      width: 200px;
+      height: 30px;
+      border: 2px solid #f40;
+      margin-left: 50px;
+      padding-left: 10px;
+      border-radius: 15px;
+      outline: none;
+    }
+    button{
+      width: 50px;
+      height: 25px;
+      margin-top: 25px;
+      margin-left: 45%;
+    }
+    .success{
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background: rgba(240, 240, 240, 0.9);
+
+    }
+    .success span{
+      position: absolute;
+      left: 50%;
+      margin-left: -50px;
+      top: 50%;
+      margin-top: -30px;
+      display: inline-block;
+      width:100px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 16px;
+      font-weight: bolder;
+      background: #f40;
+      color: #fff;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-wrap">
+    <div class="M-title">
+      <div class="main">海拼Happying</div>
+      <div class="primary">海淘拼单平台注册</div>
+    </div>
+    <div id="signUp">
+      <ul>
+        <li v-for="(item,index) in detail">
+          <span>{{detail[index].key}}</span>
+          <input type="text" v-model="detail[index].value">
+        </li>
+      </ul>
+      <button @click="submit()">提交</button>
+      <div class="backSuc" v-show="show">
+        <div class="success">
+          <span>注册成功</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var detail = [
+      {key:"用户名"},
+      {key:"密码"},
+      {key:"确认密码"},
+      {key:"默认收货地址"}
+    ]
+    var vm = new Vue({
+      el: "#signUp",
+      data:{
+        detail,
+        show : false,
+      },
+      methods:{
+        submit(){
+          this.show = true;
+          setTimeout(function () {
+            window.location.href = "../index.html";
+          },1000)
+        }
+        
+      }
+    })
+  </script>
+</body>
+</html>

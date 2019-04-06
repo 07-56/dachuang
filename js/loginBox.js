@@ -1,3 +1,4 @@
+//主页登陆相关方法
 
 var usr = $('#userName'),
 	pas = $('#passWord'),
@@ -32,22 +33,11 @@ sub.bind('click', function () {
 		//创建cookie，为期七天
 		console.log("checked");
 	}
-	$.ajax({
-		type : "post",
-		url : "======",
-		data : {
-			u : userName,
-			p : passWord
-		},
-		dataType : "TEXT",
-		success : function (r) {
-			//r为返回值
-			if(r.trim() == "y"){
-				//y为url跳转网页中传回的值
-				window.location.href = "跳转界面";
-			}else{
-				alert("用户名或密码错误");
-			}
-		}
-	})
+	if(userName == "admin"){
+		myLocal.save("user",1);
+		window.location="index.html";
+	}else{
+		myLocal.save("user",0);
+		window.location="index.html";
+	}
 });
