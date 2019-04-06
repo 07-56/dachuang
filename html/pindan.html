@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/pindan.css">
+  <script src="../js/vue.js"></script>
+  <script src="../js/mainData.js"></script>
+  <script src="../js/orderDetail.js"></script>
+  <title>拼单界面</title>
+</head>
+<body>
+  <div class="header">
+		<div class="hd-wrapper">
+			<div class="hd-cont">
+				<a class="hd-a center" id="log-in">管理员</a>
+			</div>
+		</div>
+  </div>
+
+  <div class="mainWrap">
+
+    <div class="quitBtn" @click="quitLog()">退出登陆</div>
+    <div class="startBtn" @click="start()">开始拼单</div>
+    <div class="corrOrderWrap">
+      <div class="corrOrder" id="Order">
+        <ul>
+          <li class="orderIng" v-for="(item, index) in finished">
+            <div class="content">
+              <div class="address"><span>目的地：{{item.address}}</span></div>
+              <div class="userCont"><span>当前人数：{{item.userCont}}</span></div>
+              <div class="valueSum"><span>当前价值{{item.sumPrice}}元</span></div>
+              <div class="addin" @click="addin(index)"><span>来自{{item.from}}</span></div>
+              
+              <div class="open" @click="showing(index, item)">查看详细信息</div>
+            </div>
+
+            <div class="orderDetail" v-show="item.show">
+              <div class="closeDetail" @click="unshowing(item)">X</div>
+              <div class="orderContent">
+                <div class="orderItem">
+                  <div>订单号码：{{item.orderNo}}</div>
+                  <div>拼单人数：{{item.userCont}}</div>
+                  <div>订单总价：{{item.sumPrice}}</div>
+                  <div>目标地点：{{item.address}}</div>
+                  <div>来源网站：{{item.from}}</div>
+                </div>
+                <div class="userList">
+                  <div class="userWrap" v-for="(child, index) in item.userList">
+                      <span class="user">{{child.userName}}</span>
+                      <span class="userCost">{{child.orderPrice}}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/pindan.js"></script>
+</body>
+</html>
